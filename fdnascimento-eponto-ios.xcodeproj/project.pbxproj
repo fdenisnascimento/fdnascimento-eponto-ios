@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66243FFBC35C42C147A9170A /* Pods_fdnascimento_eponto_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE918B9D32A3933FF487F955 /* Pods_fdnascimento_eponto_ios.framework */; };
 		924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */; };
-		924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B71F0EBA9500B44DC4 /* ViewController.swift */; };
 		924F70BB1F0EBA9500B44DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924F70B91F0EBA9500B44DC4 /* Main.storyboard */; };
 		924F70BD1F0EBA9500B44DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */; };
 		924F70C01F0EBA9500B44DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924F70BE1F0EBA9500B44DC4 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,12 @@
 		924F70E81F0EBA9600B44DC4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70E71F0EBA9600B44DC4 /* ExtensionDelegate.swift */; };
 		924F70EA1F0EBA9600B44DC4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70E91F0EBA9600B44DC4 /* NotificationController.swift */; };
 		924F70EC1F0EBA9600B44DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924F70EB1F0EBA9600B44DC4 /* Assets.xcassets */; };
+		92AB069E1F0EC6A000179C7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB06991F0EC6A000179C7C /* LoginViewController.swift */; };
+		92AB069F1F0EC6A000179C7C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB069A1F0EC6A000179C7C /* MainViewController.swift */; };
+		92AB06A11F0EC6A000179C7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92AB069D1F0EC6A000179C7C /* GoogleService-Info.plist */; };
+		92AB06A61F0EC6EC00179C7C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB06A31F0EC6EC00179C7C /* AlertView.swift */; };
+		92AB06A81F0EC6EC00179C7C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB06A51F0EC6EC00179C7C /* Extensions.swift */; };
+		92DC5C7D1F0EC7D200D25696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC5C7C1F0EC7D200D25696 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21ADF2248F3A3D0586A2BAC8 /* Pods_fdnascimento_eponto_ios_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_ios_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50110423017B40760E0B1FDB /* Pods_fdnascimento_eponto_ios_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_ios_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F70B21F0EBA9500B44DC4 /* fdnascimento-eponto-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fdnascimento-eponto-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		924F70B71F0EBA9500B44DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		924F70BA1F0EBA9500B44DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924F70BF1F0EBA9500B44DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,13 +101,31 @@
 		924F70E91F0EBA9600B44DC4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		924F70EB1F0EBA9600B44DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924F70ED1F0EBA9600B44DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AB06991F0EC6A000179C7C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		92AB069A1F0EC6A000179C7C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		92AB069D1F0EC6A000179C7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92AB06A31F0EC6EC00179C7C /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		92AB06A51F0EC6EC00179C7C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		92DC5C7C1F0EC7D200D25696 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DB743C25C798D48D6B0B549 /* Pods_fdnascimento_eponto_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE918B9D32A3933FF487F955 /* Pods_fdnascimento_eponto_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DD23D63028690B7D987657 /* Pods-fdnascimento-eponto-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CFF71A3EB9C26250FBB7AF /* Pods-fdnascimento-eponto-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E6AC330F534907F661A90EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		924F70AF1F0EBA9500B44DC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66243FFBC35C42C147A9170A /* Pods_fdnascimento_eponto_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +146,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B60A9B7B01DE8C81BABF06F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5DD23D63028690B7D987657 /* Pods-fdnascimento-eponto-ios.debug.xcconfig */,
+				E9CFF71A3EB9C26250FBB7AF /* Pods-fdnascimento-eponto-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E30316D41601F996D31A995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE918B9D32A3933FF487F955 /* Pods_fdnascimento_eponto_ios.framework */,
+				21ADF2248F3A3D0586A2BAC8 /* Pods_fdnascimento_eponto_ios_WatchKit_App.framework */,
+				50110423017B40760E0B1FDB /* Pods_fdnascimento_eponto_ios_WatchKit_Extension.framework */,
+				9DB743C25C798D48D6B0B549 /* Pods_fdnascimento_eponto_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		924F70A91F0EBA9500B44DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +174,8 @@
 				924F70D31F0EBA9600B44DC4 /* fdnascimento-eponto-ios WatchKit App */,
 				924F70E21F0EBA9600B44DC4 /* fdnascimento-eponto-ios WatchKit Extension */,
 				924F70B31F0EBA9500B44DC4 /* Products */,
+				0B60A9B7B01DE8C81BABF06F /* Pods */,
+				1E30316D41601F996D31A995 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,8 +193,10 @@
 		924F70B41F0EBA9500B44DC4 /* fdnascimento-eponto-ios */ = {
 			isa = PBXGroup;
 			children = (
+				92AB06A21F0EC6EC00179C7C /* Helpers */,
+				92AB06981F0EC6A000179C7C /* Controllers */,
+				92AB069C1F0EC6A000179C7C /* Resources */,
 				924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */,
-				924F70B71F0EBA9500B44DC4 /* ViewController.swift */,
 				924F70B91F0EBA9500B44DC4 /* Main.storyboard */,
 				924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */,
 				924F70BE1F0EBA9500B44DC4 /* LaunchScreen.storyboard */,
@@ -196,6 +245,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		92AB06981F0EC6A000179C7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92DC5C7C1F0EC7D200D25696 /* ViewController.swift */,
+				92AB06991F0EC6A000179C7C /* LoginViewController.swift */,
+				92AB069A1F0EC6A000179C7C /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92AB069C1F0EC6A000179C7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92AB069D1F0EC6A000179C7C /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92AB06A21F0EC6EC00179C7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				92AB06A31F0EC6EC00179C7C /* AlertView.swift */,
+				92AB06A51F0EC6EC00179C7C /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,10 +279,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 924F70F81F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios" */;
 			buildPhases = (
+				9704BF042A3A69AC32B24A86 /* [CP] Check Pods Manifest.lock */,
 				924F70AE1F0EBA9500B44DC4 /* Sources */,
 				924F70AF1F0EBA9500B44DC4 /* Frameworks */,
 				924F70B01F0EBA9500B44DC4 /* Resources */,
 				924F70F71F0EBA9600B44DC4 /* Embed Watch Content */,
+				F48B98E44CA68E7F169FB17D /* [CP] Embed Pods Frameworks */,
+				163665DB2B53C6A5DEE5CEB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +321,7 @@
 			buildPhases = (
 				924F70CD1F0EBA9600B44DC4 /* Resources */,
 				924F70F31F0EBA9600B44DC4 /* Embed App Extensions */,
+				8E6AC330F534907F661A90EB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924F70C01F0EBA9500B44DC4 /* LaunchScreen.storyboard in Resources */,
+				92AB06A11F0EC6A000179C7C /* GoogleService-Info.plist in Resources */,
 				924F70BD1F0EBA9500B44DC4 /* Assets.xcassets in Resources */,
 				924F70BB1F0EBA9500B44DC4 /* Main.storyboard in Resources */,
 			);
@@ -361,13 +442,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		163665DB2B53C6A5DEE5CEB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9704BF042A3A69AC32B24A86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F48B98E44CA68E7F169FB17D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		924F70AE1F0EBA9500B44DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */,
+				92DC5C7D1F0EC7D200D25696 /* ViewController.swift in Sources */,
+				92AB06A61F0EC6EC00179C7C /* AlertView.swift in Sources */,
+				92AB069F1F0EC6A000179C7C /* MainViewController.swift in Sources */,
+				92AB069E1F0EC6A000179C7C /* LoginViewController.swift in Sources */,
 				924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */,
+				92AB06A81F0EC6EC00179C7C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +735,7 @@
 		};
 		924F70F91F0EBA9600B44DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DD23D63028690B7D987657 /* Pods-fdnascimento-eponto-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
@@ -615,6 +749,7 @@
 		};
 		924F70FA1F0EBA9600B44DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CFF71A3EB9C26250FBB7AF /* Pods-fdnascimento-eponto-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
@@ -675,6 +810,7 @@
 				924F70F21F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70F41F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -683,6 +819,7 @@
 				924F70F61F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70F81F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +828,7 @@
 				924F70FA1F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70FB1F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +837,7 @@
 				924F70FD1F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
