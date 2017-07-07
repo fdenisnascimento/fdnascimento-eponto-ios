@@ -41,20 +41,17 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     func setupConnetcion() -> Void {
         
-        let session = WCSession.default()
         
+        let action = ["action" : "isAuthenticated"]
         
-        let action = ["action":"isAuthenticated"]
-        
-        
-        session.sendMessage(action, replyHandler: { (replyMessage) -> Void in
-            print("ok")
-            
-        }) { (error) -> Void in
-       
-            print("error: \(error.localizedDescription)")
+        WatchSessionManager.sendMessage(action) { (result, error) in
+            if error == nil {
+                self.labelStatus.setText(result?["message"] as? String)
+            }else{
+                self.labelStatus.setText("Já está logado pode continuar")
+            }
         }
-
+       
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any],
@@ -62,7 +59,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
         print("watch")
         DispatchQueue.main.async(execute: { () -> Void in
-            self.labelStatus.setText(message["success"] as? String)
+            self.labelStatus.setText("Denis")
         })
         
     }

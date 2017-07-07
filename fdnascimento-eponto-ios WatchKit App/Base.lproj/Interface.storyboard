@@ -14,8 +14,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="fdnascimento_eponto_ios_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="vxz-WI-3Di"/>
+                        <label width="1" height="0.69999999999999996" alignment="left" textAlignment="center" numberOfLines="0" id="vxz-WI-3Di"/>
+                        <button width="1" alignment="left" title="Done" id="RRh-S0-XTe"/>
                     </items>
+                    <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
                     <connections>
                         <outlet property="labelStatus" destination="vxz-WI-3Di" id="S9q-hc-j7W"/>
                     </connections>

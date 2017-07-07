@@ -9,10 +9,21 @@
 import UIKit
 import WatchConnectivity
 
-class WatchSessionManager: NSObject {
+class WatchSessionManager {
     
     let session = WCSession.default()
 
-    
+
+   class func sendMessage(_ action: [String : Any], completion: @escaping ( _ replyMessage:  [String : Any]?, _ error: Error?) -> ()) {
+        
+        WatchSessionManager().session.sendMessage(action, replyHandler: { (replyMessage) -> Void in
+                completion(replyMessage, nil)
+            
+        }) { (error) -> Void in
+            print("error: \(error.localizedDescription)")
+            completion(nil,error)
+        }
+        
+    }
     
 }

@@ -12,6 +12,10 @@
 		5C97AB0D1F0F1CD50061ED6C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB0C1F0F1CD50061ED6C /* Point.swift */; };
 		5C97AB0F1F0F1D3C0061ED6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB0E1F0F1D3C0061ED6C /* User.swift */; };
 		5C97AB121F0F239A0061ED6C /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */; };
+		5CD46DEA1F0F2C6C00D864FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CD46DE91F0F2C6C00D864FC /* GoogleService-Info.plist */; };
+		5CD46DEC1F0F2F5100D864FC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD46DEB1F0F2F5100D864FC /* Strings.swift */; };
+		5CD46DED1F0F2F5100D864FC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD46DEB1F0F2F5100D864FC /* Strings.swift */; };
+		5CD46DEF1F0F32AC00D864FC /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */; };
 		7200A9B9909647592F2F71F1 /* Pods_fdnascimento_eponto_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7460E7E68E33FD1C6E9F70 /* Pods_fdnascimento_eponto_ios.framework */; };
 		924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */; };
 		924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B71F0EBA9500B44DC4 /* ViewController.swift */; };
@@ -83,6 +87,8 @@
 		5C97AB0C1F0F1CD50061ED6C /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		5C97AB0E1F0F1D3C0061ED6C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		5CD46DE91F0F2C6C00D864FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CD46DEB1F0F2F5100D864FC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		60DD6156DF642C8D81901CD2 /* Pods-fdnascimento-eponto-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-iosTests/Pods-fdnascimento-eponto-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B34B35A84F374D51565C61C /* Pods_fdnascimento_eponto_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F70B21F0EBA9500B44DC4 /* fdnascimento-eponto-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fdnascimento-eponto-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +233,7 @@
 		924F70B41F0EBA9500B44DC4 /* fdnascimento-eponto-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5CD46DE91F0F2C6C00D864FC /* GoogleService-Info.plist */,
 				5C97AB101F0F23750061ED6C /* WatchSessionManager */,
 				5C97AB0B1F0F1CB50061ED6C /* Models */,
 				5C97AB081F0F1C6D0061ED6C /* FirebaseManager */,
@@ -236,6 +243,7 @@
 				924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */,
 				924F70BE1F0EBA9500B44DC4 /* LaunchScreen.storyboard */,
 				924F70C11F0EBA9500B44DC4 /* Info.plist */,
+				5CD46DEB1F0F2F5100D864FC /* Strings.swift */,
 			);
 			path = "fdnascimento-eponto-ios";
 			sourceTree = "<group>";
@@ -421,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924F70C01F0EBA9500B44DC4 /* LaunchScreen.storyboard in Resources */,
+				5CD46DEA1F0F2C6C00D864FC /* GoogleService-Info.plist in Resources */,
 				924F70BD1F0EBA9500B44DC4 /* Assets.xcassets in Resources */,
 				924F70BB1F0EBA9500B44DC4 /* Main.storyboard in Resources */,
 			);
@@ -556,6 +565,7 @@
 				924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */,
 				5C97AB0F1F0F1D3C0061ED6C /* User.swift in Sources */,
 				924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */,
+				5CD46DEC1F0F2F5100D864FC /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +583,9 @@
 			files = (
 				924F70EA1F0EBA9600B44DC4 /* NotificationController.swift in Sources */,
 				924F70E81F0EBA9600B44DC4 /* ExtensionDelegate.swift in Sources */,
+				5CD46DED1F0F2F5100D864FC /* Strings.swift in Sources */,
 				924F70E61F0EBA9600B44DC4 /* InterfaceController.swift in Sources */,
+				5CD46DEF1F0F32AC00D864FC /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

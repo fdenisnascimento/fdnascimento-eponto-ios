@@ -105,9 +105,9 @@ extension AppDelegate {
         
         if  message["action"] as! String == "isAuthenticated"  {
             if User.isAuthenticated() {
-                replyHandler(["success":"true"])
+                replyHandler(["message":"Juliana true"])
             }else{
-                replyHandler(["success":"false"])
+                replyHandler(["message": message_todo_your_login_on_iphone])
             }
             
         }
