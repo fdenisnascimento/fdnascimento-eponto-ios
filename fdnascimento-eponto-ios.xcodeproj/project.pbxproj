@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093DFE51C3A1C0A6E723320E /* Pods_fdnascimento_eponto_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B34B35A84F374D51565C61C /* Pods_fdnascimento_eponto_iosTests.framework */; };
+		5C97AB0A1F0F1CA80061ED6C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB091F0F1CA80061ED6C /* FirebaseManager.swift */; };
+		5C97AB0D1F0F1CD50061ED6C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB0C1F0F1CD50061ED6C /* Point.swift */; };
+		5C97AB0F1F0F1D3C0061ED6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB0E1F0F1D3C0061ED6C /* User.swift */; };
+		5C97AB121F0F239A0061ED6C /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */; };
+		7200A9B9909647592F2F71F1 /* Pods_fdnascimento_eponto_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7460E7E68E33FD1C6E9F70 /* Pods_fdnascimento_eponto_ios.framework */; };
 		924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */; };
 		924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F70B71F0EBA9500B44DC4 /* ViewController.swift */; };
 		924F70BB1F0EBA9500B44DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924F70B91F0EBA9500B44DC4 /* Main.storyboard */; };
@@ -73,9 +79,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C97AB091F0F1CA80061ED6C /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		5C97AB0C1F0F1CD50061ED6C /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		5C97AB0E1F0F1D3C0061ED6C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		60DD6156DF642C8D81901CD2 /* Pods-fdnascimento-eponto-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-iosTests/Pods-fdnascimento-eponto-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B34B35A84F374D51565C61C /* Pods_fdnascimento_eponto_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F70B21F0EBA9500B44DC4 /* fdnascimento-eponto-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fdnascimento-eponto-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		924F70B71F0EBA9500B44DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		924F70B71F0EBA9500B44DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		924F70BA1F0EBA9500B44DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924F70BF1F0EBA9500B44DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,13 +106,25 @@
 		924F70E91F0EBA9600B44DC4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		924F70EB1F0EBA9600B44DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924F70ED1F0EBA9600B44DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98631A7B7A11DDA96076C4FB /* Pods-fdnascimento-eponto-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7460E7E68E33FD1C6E9F70 /* Pods_fdnascimento_eponto_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdnascimento_eponto_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6FCC96D5A59FCA3686BC89 /* Pods-fdnascimento-eponto-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-iosTests/Pods-fdnascimento-eponto-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C99B59166756A532D46EFE58 /* Pods-fdnascimento-eponto-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdnascimento-eponto-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8B14D017096B61A541EBC743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		924F70AF1F0EBA9500B44DC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7200A9B9909647592F2F71F1 /* Pods_fdnascimento_eponto_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093DFE51C3A1C0A6E723320E /* Pods_fdnascimento_eponto_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +146,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		475FC0050EDF5D09AAFD343C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7460E7E68E33FD1C6E9F70 /* Pods_fdnascimento_eponto_ios.framework */,
+				6B34B35A84F374D51565C61C /* Pods_fdnascimento_eponto_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C97AB071F0F1C520061ED6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				924F70B71F0EBA9500B44DC4 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C97AB081F0F1C6D0061ED6C /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C97AB091F0F1CA80061ED6C /* FirebaseManager.swift */,
+			);
+			name = FirebaseManager;
+			path = FIrebaseManager;
+			sourceTree = "<group>";
+		};
+		5C97AB0B1F0F1CB50061ED6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C97AB0C1F0F1CD50061ED6C /* Point.swift */,
+				5C97AB0E1F0F1D3C0061ED6C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C97AB101F0F23750061ED6C /* WatchSessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				5C97AB111F0F239A0061ED6C /* WatchSessionManager.swift */,
+			);
+			path = WatchSessionManager;
+			sourceTree = "<group>";
+		};
+		612A9F6C3C457DB91DEFD940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98631A7B7A11DDA96076C4FB /* Pods-fdnascimento-eponto-ios.debug.xcconfig */,
+				C99B59166756A532D46EFE58 /* Pods-fdnascimento-eponto-ios.release.xcconfig */,
+				BF6FCC96D5A59FCA3686BC89 /* Pods-fdnascimento-eponto-iosTests.debug.xcconfig */,
+				60DD6156DF642C8D81901CD2 /* Pods-fdnascimento-eponto-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		924F70A91F0EBA9500B44DC4 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +208,8 @@
 				924F70D31F0EBA9600B44DC4 /* fdnascimento-eponto-ios WatchKit App */,
 				924F70E21F0EBA9600B44DC4 /* fdnascimento-eponto-ios WatchKit Extension */,
 				924F70B31F0EBA9500B44DC4 /* Products */,
+				612A9F6C3C457DB91DEFD940 /* Pods */,
+				475FC0050EDF5D09AAFD343C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,8 +227,11 @@
 		924F70B41F0EBA9500B44DC4 /* fdnascimento-eponto-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5C97AB101F0F23750061ED6C /* WatchSessionManager */,
+				5C97AB0B1F0F1CB50061ED6C /* Models */,
+				5C97AB081F0F1C6D0061ED6C /* FirebaseManager */,
+				5C97AB071F0F1C520061ED6C /* Controllers */,
 				924F70B51F0EBA9500B44DC4 /* AppDelegate.swift */,
-				924F70B71F0EBA9500B44DC4 /* ViewController.swift */,
 				924F70B91F0EBA9500B44DC4 /* Main.storyboard */,
 				924F70BC1F0EBA9500B44DC4 /* Assets.xcassets */,
 				924F70BE1F0EBA9500B44DC4 /* LaunchScreen.storyboard */,
@@ -203,10 +287,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 924F70F81F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios" */;
 			buildPhases = (
+				6D99A6A0F4ADFD4EA5BD510C /* [CP] Check Pods Manifest.lock */,
 				924F70AE1F0EBA9500B44DC4 /* Sources */,
 				924F70AF1F0EBA9500B44DC4 /* Frameworks */,
 				924F70B01F0EBA9500B44DC4 /* Resources */,
 				924F70F71F0EBA9600B44DC4 /* Embed Watch Content */,
+				B855ECEE39D9EB19312C937E /* [CP] Embed Pods Frameworks */,
+				91CD88424F3E88F08F65C70B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 924F70FB1F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-iosTests" */;
 			buildPhases = (
+				037610DF6DCDF24165DB25E0 /* [CP] Check Pods Manifest.lock */,
 				924F70C21F0EBA9500B44DC4 /* Sources */,
 				924F70C31F0EBA9500B44DC4 /* Frameworks */,
 				924F70C41F0EBA9500B44DC4 /* Resources */,
+				E7FCA7F3C0D76372994B8B60 /* [CP] Embed Pods Frameworks */,
+				33F735EF26FDD0CD1507CFA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +332,7 @@
 			buildPhases = (
 				924F70CD1F0EBA9600B44DC4 /* Resources */,
 				924F70F31F0EBA9600B44DC4 /* Embed App Extensions */,
+				8B14D017096B61A541EBC743 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,12 +452,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		037610DF6DCDF24165DB25E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33F735EF26FDD0CD1507CFA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-iosTests/Pods-fdnascimento-eponto-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D99A6A0F4ADFD4EA5BD510C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91CD88424F3E88F08F65C70B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B855ECEE39D9EB19312C937E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-ios/Pods-fdnascimento-eponto-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FCA7F3C0D76372994B8B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fdnascimento-eponto-iosTests/Pods-fdnascimento-eponto-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		924F70AE1F0EBA9500B44DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C97AB121F0F239A0061ED6C /* WatchSessionManager.swift in Sources */,
+				5C97AB0D1F0F1CD50061ED6C /* Point.swift in Sources */,
+				5C97AB0A1F0F1CA80061ED6C /* FirebaseManager.swift in Sources */,
 				924F70B81F0EBA9500B44DC4 /* ViewController.swift in Sources */,
+				5C97AB0F1F0F1D3C0061ED6C /* User.swift in Sources */,
 				924F70B61F0EBA9500B44DC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +790,7 @@
 		};
 		924F70F91F0EBA9600B44DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98631A7B7A11DDA96076C4FB /* Pods-fdnascimento-eponto-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
@@ -615,6 +804,7 @@
 		};
 		924F70FA1F0EBA9600B44DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99B59166756A532D46EFE58 /* Pods-fdnascimento-eponto-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
@@ -628,6 +818,7 @@
 		};
 		924F70FC1F0EBA9600B44DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6FCC96D5A59FCA3686BC89 /* Pods-fdnascimento-eponto-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,6 +834,7 @@
 		};
 		924F70FD1F0EBA9600B44DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60DD6156DF642C8D81901CD2 /* Pods-fdnascimento-eponto-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -675,6 +867,7 @@
 				924F70F21F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70F41F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -683,6 +876,7 @@
 				924F70F61F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70F81F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-ios" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +885,7 @@
 				924F70FA1F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		924F70FB1F0EBA9600B44DC4 /* Build configuration list for PBXNativeTarget "fdnascimento-eponto-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +894,7 @@
 				924F70FD1F0EBA9600B44DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

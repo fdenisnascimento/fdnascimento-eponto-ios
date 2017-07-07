@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
+    var session: WCSession?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        configureFirebase()
+        configureIQKeyboardManager()
+        setupConnectionWatch()
+        
+        
+        
         return true
     }
 
@@ -44,3 +55,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate {
+    
+    func configureFirebase() -> Void {
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+    }
+    
+    func configureIQKeyboardManager() -> Void {
+        IQKeyboardManager.sharedManager().enable = true
+    }
+    
+    func setupConnectionWatch() -> Void {
+        if WCSession.isSupported() {
+            session = WCSession.default()
+            session?.delegate = self
+            session?.activate()
+        }
+    }
+}
+
+
+
+extension AppDelegate {
+    
+    // MARK: - WCSessionDelegate
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        switch activationState {
+        case .activated:
+            print("[iOS] WCSession is activated.")
+        case .inactive:
+            print("[iOS] WCSession is inactive.")
+        case .notActivated:
+            print("[iOS] WCSession is not activated.")
+        }
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("[iOS] WCSession did become inactive.")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("[iOS] WCSession deactivated.")
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        
+        if  message["action"] as! String == "isAuthenticated"  {
+            if User.isAuthenticated() {
+                replyHandler(["success":"true"])
+            }else{
+                replyHandler(["success":"false"])
+            }
+            
+        }
+        
+        
+    }
+    
+}
