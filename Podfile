@@ -12,10 +12,10 @@ target 'fdnascimento-eponto-ios' do
   pod 'SwiftGen'
   pod 'IQKeyboardManagerSwift'
 
-  target 'fdnascimento-eponto-iosTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'fdnascimento-eponto-iosTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
 
 end
 

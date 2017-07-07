@@ -104,11 +104,11 @@ extension AppDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         
         if  message["action"] as! String == "isAuthenticated"  {
-            if User.isAuthenticated() {
-                replyHandler(["message":"Juliana true"])
-            }else{
-                replyHandler(["message": message_todo_your_login_on_iphone])
-            }
+//            if User.isAuthenticated() {
+//                replyHandler(["message":"Juliana true"])
+//            }else{
+//                replyHandler(["message": message_todo_your_login_on_iphone])
+//            }
             
         }
         

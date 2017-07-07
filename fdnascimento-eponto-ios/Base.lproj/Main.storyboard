@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="fdnascimento_eponto_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,87 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cadastro_6" translatesAutoresizingMaskIntoConstraints="NO" id="ZJK-wK-czl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_cadastro" translatesAutoresizingMaskIntoConstraints="NO" id="TYi-Me-EXc">
+                                <rect key="frame" x="118" y="50" width="140" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="SaF-T8-mSU"/>
+                                    <constraint firstAttribute="height" constant="100" id="UrP-bv-77W"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FXq-P6-dgi">
+                                <rect key="frame" x="63" y="180" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="XdE-eF-xj9"/>
+                                    <constraint firstAttribute="width" constant="250" id="bpD-pd-VRg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-vK-qc8">
+                                <rect key="frame" x="63" y="235" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gwb-cs-dVt"/>
+                                    <constraint firstAttribute="width" constant="250" id="how-b7-w3l"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93l-UU-c63">
+                                <rect key="frame" x="63" y="280" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lwh-Ji-SKg"/>
+                                    <constraint firstAttribute="width" constant="250" id="oQm-f7-NNy"/>
+                                </constraints>
+                                <state key="normal" title="Esqueceu sua senha?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7C-Ou-ruT">
+                                <rect key="frame" x="62" y="340" width="250" height="35"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.72549019609999998" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Jzr-34-WaU"/>
+                                    <constraint firstAttribute="height" constant="35" id="Owp-1o-r2D"/>
+                                </constraints>
+                                <state key="normal" title="Entrar"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="93l-UU-c63" firstAttribute="top" secondItem="PGf-vK-qc8" secondAttribute="bottom" constant="10" id="1XL-wb-x0h"/>
+                            <constraint firstItem="FXq-P6-dgi" firstAttribute="top" secondItem="TYi-Me-EXc" secondAttribute="bottom" constant="30" id="8Fm-Dc-fVW"/>
+                            <constraint firstItem="Y7C-Ou-ruT" firstAttribute="top" secondItem="93l-UU-c63" secondAttribute="bottom" constant="30" id="8MJ-aX-jSj"/>
+                            <constraint firstItem="PGf-vK-qc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CH4-f2-MDw"/>
+                            <constraint firstItem="PGf-vK-qc8" firstAttribute="top" secondItem="FXq-P6-dgi" secondAttribute="bottom" constant="20" id="DTQ-MP-jww"/>
+                            <constraint firstAttribute="trailing" secondItem="ZJK-wK-czl" secondAttribute="trailing" id="GGb-2T-zi5"/>
+                            <constraint firstItem="Y7C-Ou-ruT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I0T-fF-AgY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZJK-wK-czl" secondAttribute="bottom" id="NnB-7b-SnI"/>
+                            <constraint firstItem="ZJK-wK-czl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kYT-Vs-XmL"/>
+                            <constraint firstItem="FXq-P6-dgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lFm-5j-H8G"/>
+                            <constraint firstItem="93l-UU-c63" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhh-O6-NTJ"/>
+                            <constraint firstItem="TYi-Me-EXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oyy-RQ-bst"/>
+                            <constraint firstItem="ZJK-wK-czl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xWv-gm-BHF"/>
+                            <constraint firstItem="TYi-Me-EXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="yWo-bb-Xba"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="Y7C-Ou-ruT" id="b5O-hg-RzL"/>
+                        <outlet property="btnRequestPassword" destination="93l-UU-c63" id="wY3-8D-ZSx"/>
+                        <outlet property="textEmail" destination="FXq-P6-dgi" id="CtM-uE-Lsz"/>
+                        <outlet property="textPassword" destination="PGf-vK-qc8" id="BG4-Xl-RLA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-394" y="-72"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_cadastro_6" width="416" height="739"/>
+        <image name="logo_cadastro" width="99" height="99"/>
+    </resources>
 </document>
